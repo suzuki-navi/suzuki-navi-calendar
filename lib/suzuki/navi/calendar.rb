@@ -82,21 +82,23 @@ module Suzuki
             if day.wday == 1
               y, m, w = weekMonth(day)
             end
-            if w == 1 || w == 2
-              esc1 = "\e[32m"
+            if y < 2019 || y == 2019 && m < 10
+              esc1 = "\e[38;5;248m"
+            elsif w == 1 || w == 2
+              esc1 = "\e[38;5;43m"
             else
-              esc1 = "\e[34m"
+              esc1 = "\e[38;5;111m"
             end
             if day.wday == 6 || day.wday == 0
-              esc1 = "\e[31m"
+              esc1 = "\e[38;5;203m"
             end
             holidayName = HolidayJapan.name(day)
             if holidayName
-              esc1 = "\e[31m"
+              esc1 = "\e[38;5;203m"
             end
             if day.wday == 6 && day.mday <= 7
               # 第1土曜日
-              esc1 = "\e[33m"
+              esc1 = "\e[38;5;215m"
             end
             if day == today
               esc1 = esc1 + "\e[7m"
