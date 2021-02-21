@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'suzuki/navi/calendar'
+
+Suzuki::Navi::Calendar.main
+
