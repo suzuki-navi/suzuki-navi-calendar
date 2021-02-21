@@ -2,6 +2,8 @@
 
 require 'date'
 
+require 'holiday_japan'
+
 require_relative "calendar/version"
 
 module Suzuki
@@ -88,8 +90,12 @@ module Suzuki
             if day.wday == 6 || day.wday == 0
               esc1 = "\e[31m"
             end
+            holidayName = HolidayJapan.name(day)
+            if holidayName
+              esc1 = "\e[31m"
+            end
             if day.wday == 6 && day.mday <= 7
-              #esc1 = esc1 + "\e[4m"
+              # 第1土曜日
               esc1 = "\e[33m"
             end
             if day == today

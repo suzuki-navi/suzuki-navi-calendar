@@ -13,6 +13,7 @@ suzuki-navi's calendar.
 
 ## Development
 
+    $ bundle install
     $ bundle exec exe/cal
 
 ## License
