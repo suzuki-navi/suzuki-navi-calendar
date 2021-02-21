@@ -1,6 +1,8 @@
-# Suzuki::Navi::Calendar
+# suzuki-navi's calendar
 
 suzuki-navi's calendar.
+
+![Calendar Image](calendar.png)
 
 ## Installation
 
@@ -10,6 +12,8 @@ suzuki-navi's calendar.
 ## Usage
 
     $ cal
+
+    $ cal 2021
 
 ## Development
 
