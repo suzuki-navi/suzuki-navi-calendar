@@ -2,5 +2,6 @@
 
 require 'suzuki/navi/calendar'
 
-Suzuki::Navi::Calendar.main
+cli = Suzuki::Navi::Calendar::CLI.new
+cli.main
 
