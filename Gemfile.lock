@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     suzuki-navi-calendar (0.1.0)
+      holiday_japan
 
 GEM
   remote: https://rubygems.org/
@@ -12,7 +13,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  holiday_japan
   suzuki-navi-calendar!
 
 BUNDLED WITH
